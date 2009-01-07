@@ -1,0 +1,18 @@
+Source: #PACKAGE_NAME
+Section: #SECTION
+Priority: optional
+Maintainer: Quinn Storm <livinglatexkali@gmail.com> #VERIFY
+Build-Depends: debhelper (>= 4.0.0), autotools-dev
+Standards-Version: 3.6.2
+
+Package: #PACKAGE_NAME_example_binary
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, #DEPENDS
+Description: #DESCRIPTION
+ #LONGDESC
+
+Package: #PACKAGE_NAME_example_data
+Architecture: all
+Depends: #DEPENDS
+Description: Pengice Data
+ #LONGDESC
