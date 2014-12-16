@@ -67,7 +67,7 @@ namespace Sound
 
             verbose << "Loading " << filename << "...";
 
-            if (!mix_sound)
+            if (!mix_sound[i])
                 error << endl << "Could not load " << filename << endl;
 
             else
