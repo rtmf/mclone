@@ -1,3 +1,3 @@
 
-void glError(char *s, unsigned int *errStore);
+void glError(const char *s, unsigned int *errStore);
 
