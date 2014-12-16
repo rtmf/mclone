@@ -84,8 +84,9 @@ int main(int argc, char **argv)
     SDL_Joystick * JS;
     SDL_JoystickEventState(SDL_ENABLE);
     JS=SDL_JoystickOpen(0);
+    printf("Opened joystick index %d\n", SDL_JoystickIndex(JS));
 
-    if (SDL_SetVideoMode(640, 480, 32,
+    if (SDL_SetVideoMode(1024, 768, 32,
                 SDL_OPENGL | SDL_HWPALETTE | SDL_DOUBLEBUF) == 0)
     {
         printf("SDL_SetVideoMode error: %s\n", SDL_GetError());
