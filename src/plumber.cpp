@@ -236,6 +236,7 @@ namespace Game
         if (nx<=0) {nx=0;vx=0;}
 
         if (bouncetimer)
+        {
             if (holding_jump)
             {
                 jumping=true;
@@ -249,6 +250,7 @@ namespace Game
             else
                 if (!--bouncetimer)
                     Sound::Play(Sound::Bounce,3);
+        }
 
 
         // Upward thrust into the air
@@ -260,7 +262,7 @@ namespace Game
         }
 
         // Falling
-        if (jumping && jumpthrust==0 || !jumping)
+        if ((jumping && jumpthrust==0) || !jumping)
         {
           ny = y+vy;
           vy+=ACCEL_Y;

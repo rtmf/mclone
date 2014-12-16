@@ -436,8 +436,8 @@ namespace Game
 
     const char fileMagic[] = "mario.map file magic";
     const int magicLen = 20;
-    int byteSex[2] = {0xDEADBEEF, 0};
-    int byteXes[2] = {0xEFBEADDE, 0};
+    int byteSex[2] = {(int)0xDEADBEEFu, 0};
+    int byteXes[2] = {(int)0xEFBEADDEu, 0};
 
     bool SaveMap(const string& filename) {
         // TODO: assert that int is 32 bit
