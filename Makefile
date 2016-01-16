@@ -2,7 +2,8 @@ all : mario
 
 mario : build/game.o build/main.o build/sound.o build/tileobject.o \
         build/tileplane.o build/glerror.o build/texture.o build/plumber.o \
-		build/interact.o build/mover.o build/enemybase.o build/updater.o
+		build/interact.o build/mover.o build/enemybase.o build/updater.o \
+		oglconsole-sdl.o -lGL -lGLU
 	$(CXX) $(CFLAGS) $^ $(LDFLAGS) -o $@ 
 
 build/%.o : src/%.cpp

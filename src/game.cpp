@@ -109,16 +109,16 @@ namespace Game
     {
         switch(button)
         {
-            case 0:
+            case 2:
                 PBACK->Key(JUMP,down);
                 break;
-            case 1:
+            case 0:
                 PBACK->Key(SPINJUMP,down);
                 break;
-            case 2:
+            case 3:
                 PBACK->Key(RUN,down);
                 break;
-            case 3:
+            case 1:
                 if (down)
                 {
                     PBACK->small=!PBACK->small;
